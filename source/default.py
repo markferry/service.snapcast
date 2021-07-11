@@ -42,7 +42,7 @@ import xbmcgui
 #
 
 
-def systemctl(command, service=None):
+def systemctl(command, service="snapclient"):
     if service is None:
         service = xbmcaddon.Addon().getAddonInfo('id')
 
