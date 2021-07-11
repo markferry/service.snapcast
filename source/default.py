@@ -86,10 +86,10 @@ class Player(xbmc.Player):
     # Yatzee call addon will pause player on incoming call
     # can we mute the snapclient (or disable it) during call?
     #
-    def onPlayBackPaused():
+    def onPlayBackPaused(self):
         xbmc.log("Snapcast event onPlayBackPaused!", level=xbmc.LOGNOTICE)
 
-    def onPlayBackResumed():
+    def onPlayBackResumed(self):
         xbmc.log("Snapcast event onPlayBackResumed!", level=xbmc.LOGNOTICE)
 
 
